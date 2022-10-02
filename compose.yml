@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  web:
+    image: node:18
+    container_name: test_5g_altice
+    user: node
+    working_dir: /workspace
+    volumes:
+      - ./:/workspace
+      - ~:/home/node:cached
+    expose:
+      - "8000"
+      - "3000"
+    ports:
+      - "8000:8000"
+      - "3000:3000"
+    command: bash -c "while true; do echo hello; sleep 2; done"
