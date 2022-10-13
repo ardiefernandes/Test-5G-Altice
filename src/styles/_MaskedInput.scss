@@ -1,0 +1,18 @@
+.masked-input {
+  display: block;
+
+  span {
+    display: block;
+    text-align: left;
+  }
+
+  input {
+    color: #000;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    border-radius: 10px;
+  }
+}
+
+

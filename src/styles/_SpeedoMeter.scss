@@ -1,0 +1,25 @@
+.speedometer {
+  display: flex;
+  position: relative;
+
+  .speedometer-text {
+    margin: auto;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  .speedometer-indicator {
+    font-size: 1.8rem;
+  }
+
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

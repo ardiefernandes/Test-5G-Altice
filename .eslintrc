@@ -1,11 +1,13 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:jest/recommended",
     "plugin:import/errors",
     "plugin:import/warnings"
   ],
@@ -15,7 +17,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "jest"],
   "settings": {
     "react": {
       "version": "detect"

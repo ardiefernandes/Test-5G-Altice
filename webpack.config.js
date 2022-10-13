@@ -1,22 +1,25 @@
+/* eslint-disable no-undef */
+
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   mode: "development",
   target: "web",
   entry: {
-    bundle: "./src/index",
+    main: ["./src/index.js", "./src/styles/index.scss"],
   },
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, "dist"),
     publicPath: "",
     filename: "[name].js?v=[fullhash]",
   },
   devServer: {
     host: "0.0.0.0",
-    port: 3000,
+    port: 3001,
     historyApiFallback: true,
     https: false,
     open: true,
@@ -35,12 +38,18 @@ module.exports = {
         use: ["babel-loader"],
       },
       {
-        test: /(\.css)$/,
-        use: ["style-loader", "css-loader"],
+        test: /\.s[ac]ss$/i,
+        use: [
+          process.ENV !== "production"
+            ? "style-loader"
+            : MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ],
       },
       {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.(jpg|png|svg|gif)$/,
+        type: "asset/resource",
       },
     ],
   },
@@ -49,6 +58,10 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "src/index.html",
+      favicon: "src/assets/favicon.ico",
+    }),
+    new MiniCssExtractPlugin({
+      filename: "[name].css?v=[fullhash]",
     }),
   ],
 };

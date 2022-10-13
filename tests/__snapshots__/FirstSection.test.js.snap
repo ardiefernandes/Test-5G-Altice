@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders the page first section 1`] = `
+<section
+  className="first-section"
+>
+  <h1
+    aria-label="A evolução tecnológica que levas contigo"
+  >
+    A EVOLUÇÃO tecnológica que levas contigo
+  </h1>
+  <img
+    alt="meo 5G"
+    src="MEO 5G Banner.png"
+  />
+</section>
+`;

@@ -1,0 +1,14 @@
+.first-section {
+  padding: 0 20px;
+  margin-bottom: $section-margin-bottom;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    @include h_tag_properties(230, 300, -0.4vw);
+  }
+}
+
+

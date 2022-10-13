@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders the second section promotional video 1`] = `
+<div
+  className="second-section-video"
+>
+  <video
+    alt="video promocional top gun maverick na meo"
+    autoPlay={true}
+    loop={true}
+    muted={true}
+    src="https://www.meo.pt/PublishingImages/videos/top-gun-maverick-meo-video-xl/top-gun-maverick-meo-video-xl.mp4"
+  />
+</div>
+`;

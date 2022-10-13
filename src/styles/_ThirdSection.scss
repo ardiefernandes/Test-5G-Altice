@@ -1,0 +1,33 @@
+.third-section {
+  padding: 0 50px;
+  margin-bottom: $section-margin-bottom;
+
+  h2 {
+    @include h_tag_properties(140, 300, -0.2vw);
+    margin-bottom: 120px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      width: 40%;
+      min-width: 850px;
+      max-width: 900px;
+      margin: 0 auto 30px;
+    }
+
+    button {
+      width: 500px;
+      height: 120px;
+      margin: 70px auto 30px;
+      background-color: #070765;
+      border-radius: 30px;
+    }
+  }
+
+}
+
+@import "./MaskedInput";
+

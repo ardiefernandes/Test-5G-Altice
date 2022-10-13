@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders the header 1`] = `
+<header
+  className="app-header"
+>
+  <img
+    alt="meo logo"
+    src="MEO Logo.svg"
+  />
+</header>
+`;

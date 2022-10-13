@@ -10,8 +10,8 @@ services:
       - ~:/home/node:cached
     expose:
       - "8000"
-      - "3000"
+      - "3001"
     ports:
       - "8000:8000"
-      - "3000:3000"
+      - "3001:3001"
     command: bash -c "while true; do echo hello; sleep 2; done"

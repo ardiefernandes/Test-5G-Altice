@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`correctly renders the speedometer for 3G 1`] = `
+<div
+  className="speedometer"
+  style={
+    {
+      "height": 390,
+      "width": 390,
+    }
+  }
+>
+  <div
+    className="speedometer-text"
+  >
+    <label
+      className="speedometer-label"
+    >
+      3G
+    </label>
+    <span
+      className="speedometer-indicator"
+    >
+      0 Mbps
+    </span>
+  </div>
+  <canvas
+    height={398}
+    width={398}
+  />
+  <canvas
+    height={398}
+    width={398}
+  />
+</div>
+`;
+
+exports[`correctly renders the speedometer for 4G 1`] = `
+<div
+  className="speedometer"
+  style={
+    {
+      "height": 430,
+      "width": 430,
+    }
+  }
+>
+  <div
+    className="speedometer-text"
+  >
+    <label
+      className="speedometer-label"
+    >
+      4G
+    </label>
+    <span
+      className="speedometer-indicator"
+    >
+      0 Mbps
+    </span>
+  </div>
+  <canvas
+    height={440}
+    width={440}
+  />
+  <canvas
+    height={440}
+    width={440}
+  />
+</div>
+`;
+
+exports[`correctly renders the speedometer for 5G 1`] = `
+<div
+  className="speedometer"
+  style={
+    {
+      "height": 460,
+      "width": 460,
+    }
+  }
+>
+  <div
+    className="speedometer-text"
+  >
+    <label
+      className="speedometer-label"
+    >
+      5G
+    </label>
+    <span
+      className="speedometer-indicator"
+    >
+      0 Mbps
+    </span>
+  </div>
+  <canvas
+    height={471}
+    width={471}
+  />
+  <canvas
+    height={471}
+    width={471}
+  />
+</div>
+`;

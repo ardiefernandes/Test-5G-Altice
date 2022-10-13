@@ -1,0 +1,45 @@
+.second-section {
+  display: flex;
+  padding: 0 50px;
+  flex-direction: column;
+  margin-bottom: $section-margin-bottom;
+
+  h2 {
+    @include h_tag_properties(140, 300, -0.2vw);
+    margin-bottom: 50px;
+  }
+
+  .second-section-video {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    max-width: 3500px;
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 46%, rgba(0,212,255,1) 100%);
+    border-radius: 150px;
+
+    video {
+      width: 100%;
+      border-radius: 90px;
+    }
+  }
+
+  .net-speed-comparator {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+
+    .speed-comparator-container {
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .speedometer {
+      margin-top: auto;
+    }
+  }
+
+  @import "./SpeedoMeter";
+}
+
+
